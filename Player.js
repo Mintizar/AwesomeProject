@@ -162,6 +162,8 @@ export default class Player extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+
+        <Text style={{color:"#41FB1C",fontSize:25, fontWeight:"bold", margin:30 }}>  Audio Player </Text>
         <Image
           style={styles.albumCover}
           source={{
@@ -173,23 +175,23 @@ export default class Player extends React.Component {
             style={styles.control}
             onPress={this.handlePreviousTrack}
           >
-            <Ionicons name="ios-play-skip-back-sharp" size={48} color="#444" />
+            <Ionicons name="ios-play-skip-back-sharp" size={48} color="#41FB1C" />
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.control}
             onPress={this.handlePlayPause}
           >
             {this.state.isPlaying ? (
-              <Ionicons name="ios-pause" size={48} color="#444" />
+              <Ionicons name="ios-pause" size={48} color="#41FB1C" />
             ) : (
-              <Ionicons name="ios-play-circle" size={48} color="#444" />
+              <Ionicons name="ios-play-circle" size={48} color="#41FB1C" />
             )}
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.control}
             onPress={this.handleNextTrack}
           >
-            <Ionicons name="ios-play-skip-forward" size={48} color="#444" />
+            <Ionicons name="ios-play-skip-forward" size={48} color="#41FB1C" />
           </TouchableOpacity>
         </View>
         {this.renderFileInfo()}
@@ -201,7 +203,7 @@ export default class Player extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#030303",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -211,13 +213,13 @@ const styles = StyleSheet.create({
   },
   trackInfo: {
     padding: 40,
-    backgroundColor: "#fff",
+    backgroundColor: "#030303",
   },
 
   trackInfoText: {
     textAlign: "center",
     flexWrap: "wrap",
-    color: "#550088",
+    color: "#41FB1C",
   },
   largeText: {
     fontSize: 22,
