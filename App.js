@@ -18,7 +18,7 @@ function HomeScreen({ navigation }) {
       <Image style={styles.frontpic} source={require("./assets/pic2.jpeg")} />
 
       <Text style={styles.heading}>
-        Welcome to the New MP3 Player Build in React Native Using Expo
+        Welcome   update to the New MP3 Player Build in React Native Using Expo
       </Text>
 
       <Button
